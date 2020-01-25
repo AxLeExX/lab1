@@ -1,0 +1,41 @@
+* { /* Resets everything so different browsers don't affect layout */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .page {
+    background-color: #F09A9D;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .page-title {
+    font-size: 20px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  .page {
+    background-color: #F09A9D;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .page-title {
+    font-size: 20px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 901px) {
+  .page {
+    background-color: #F09A9D;
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  .page-title {
+    font-size: 35px;
+  }
+}
