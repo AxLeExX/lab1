@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   .page {
-    background-color: #F09A9D;
-    width: 100%;
+    background-color: #B0C4DE;
+    width: 100% !important;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
   .page-title {
     font-size: 20px;
@@ -19,23 +21,100 @@
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 900px) {
   .page {
-    background-color: #F09A9D;
-    width: 100%;
+    background-color: #B0C4DE !important;
+    width: 100% !important;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
   .page-title {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 901px) {
   .page {
-    background-color: #F09A9D;
+    background-color: #B0C4DE !important;
     width: 80%;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
   .page-title {
-    font-size: 35px;
+    font-size: 30px;
   }
+}
+
+.bg-dark {
+  background-color: #191970 !important;
+  border-bottom: solid 5px #FFFFFF !important;
+}
+
+.page-title {
+  color: #191970;
+  text-align: center;
+  display: flex;
+  padding: 15px;
+  border: 10px double #191970;
+  justify-content: space-around;
+}
+
+.content ul {
+  margin-left: 25px;
+}
+
+.portfolio {
+  column-count: 3;
+  column-gap: 1em;
+}
+.image {
+  border: 1px solid #191970;
+}
+.image img {
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.column {
+  width: 50%;
+  margin: 10px;
+}
+.avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+  border-radius: 40px;
+  background-color: #D6E9FE;
+}
+.username {
+  margin-top: 20px;
+}
+.comment {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-bottom: 2px solid #191970;
+}
+
+.biography {
+  margin: 10px;
+}
+.biography img {
+  width: 500px;
+  float: left;
+  margin-right: 10px;
+}
+
+.footer {
+    color: #4169E1;
+    background-color: #191970;
+    text-align: center;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}
+.footer a {
+  text-decoration: none;
+  color: #FFFFFF !important;
 }
